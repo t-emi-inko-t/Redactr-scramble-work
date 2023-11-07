@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCTP Redactr - Scramble Text Assignment</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+    <div class="container">
+        <h1>Redactr - Scramble Text</h1>
+        <h4>By Tamuno-Emi Inko-Tariah</h4>
+        <form>
+            <label for="originalText">Enter Text:</label>
+            <textarea id="originalText" rows="4" cols="50"></textarea>
+
+            <label for="redactWords">Words to Redact (space-separated):</label>
+            <input type="text" id="redactWords">
+
+            <label for="replacementText">Replacement Text:</label>
+            <input type="text" id="replacementText" placeholder="****">
+
+            <button type="button" onclick="redactText()">Redact Now</button>
+
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
